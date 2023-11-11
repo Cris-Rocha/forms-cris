@@ -7,6 +7,7 @@
     <title>Food Party</title>
 </head>
 <body>
+    <form>
     <div class="container">
     <fieldset>
         <legend>Personnal Info</legend>
@@ -32,15 +33,13 @@
                 <option value="spain">Spain</option>
                 <option value="iceland">iceland</option>
                 <option value="egypt">Egypt</option>
-
             </select>
             </div>
       </p>
     </fieldset>
     </div>
     <fieldset>
-      <legend>Food Preferences</legend>
-    <form>
+      <legend>Food Preferences:</legend>
       <p>
         <input type="checkbox" id="taste_1" name="x" value="x" />
         <label for="taste_1">Drinks</label>
@@ -49,77 +48,77 @@
         <input type="checkbox" id="taste_2" name="y" value="y" />
         <label for="taste_2">Desserts</label>
       </p>
-    </form>
-    </fieldset>
-
-  <fieldset>
-    <legend>Optional</legend>
-    
-  
-    <label for="spicy">Choose a maximum spicy: </label>
-    <input
-      type="range"
-      name="spicy"
-      id="spciy"
-      min="0"
-      max="20"
-      step="10"
-      value="10" />
-    <output class="spicy-output" for="spicy"></output>
-<br>
-    <label for="spicy">Choose a maximum salt: </label>
-    <input
-      type="range"
-      name="salt"
-      id="salty"
-      min="0"
-      max="20"
-      step="10"
-      value="10" />
-    <output class="salt-output" for="salt"></output>
-
     </fieldset>
     
-      <fieldset>
-        <legend>Dietary Restrictions</legend>
-        <form>
-          <p>
-            <input type="checkbox" id="allergy" name="food-allergy" value="allergy"/>
-            <label for="alergy">Allergy</label>
-
-            <input type="checkbox" id="vegetarian" name="vegetarian" value="vegetarian"/>
-            <label for="vegetarian">Vegetarian</label>
-            <input type="checkbox" id="vegan" name="vegan" value="vegan"/>
-            <label for="vegan">Vegan</label>
-          </p>
-              
-
-          </p>
-        </form>
-      </fieldset>
     <fieldset>
-      <legend>Portion</legend>
-      <p>
+        <legend>Optional</legend>
+        
+        
+        <label for="spicy">Choose a maximum spicy: </label>
+        <input
+        type="range"
+        name="spicy"
+        id="spciy"
+        min="0"
+        max="20"
+        step="10"
+        value="10" />
+        <output class="spicy-output" for="spicy"></output>
+        <br>
+        <label for="spicy">Choose a maximum salt: </label>
+        <input
+        type="range"
+        name="salt"
+        id="salty"
+        min="0"
+        max="20"
+        step="10"
+        value="10" />
+        <output class="salt-output" for="salt"></output>
+        
+    </fieldset>
+    
+    <fieldset>
+        <legend>Dietary Restrictions</legend>
+        
+            <p>
+                <input type="checkbox" id="allergy" name="food-allergy" value="allergy"/>
+                <label for="alergy">Allergy</label>
+                
+                <input type="checkbox" id="vegetarian" name="vegetarian" value="vegetarian"/>
+                <label for="vegetarian">Vegetarian</label>
+                <input type="checkbox" id="vegan" name="vegan" value="vegan"/>
+                <label for="vegan">Vegan</label>
+            </p>
+            
+            
+        </p>
+    
+</fieldset>
+<fieldset>
+    <legend>Portion</legend>
+    <p>
         <input type="radio" name="name" id="size_1" value="small" />
         <label for="size_1">Small - Medium</label>
-      </p>
-      <p>
+    </p>
+    <p>
         <input type="radio" name="size" id="size_2" value="medium" />
         <label for="size_2">Medium -Large</label>
-      </p>
-     
-    </fieldset>
-  </form>
-  <!-- <script src="script.js"></script> -->
+    </p>
+    
+</fieldset>
+<!-- <script src="script.js"></script> -->
 
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <!-- <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
-  <footer>
-      <H2>By: Cris Rocha</H2>
+<!--
+    This script places a badge on your repl's full-browser view back to your repl's cover
+    
+    page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+    teal, blue, blurple, magenta, pink!
+-->
+<!-- <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
+</form>
+<footer>
+    <H2>By: Cris Rocha</H2>
   </footer>
 </body>
 </html>
