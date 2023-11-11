@@ -29,7 +29,7 @@
                 <option value="Mohammad Hamidi">
                 <option value="Mohammed Alisawi">
                 <option value="Nurzat Akdogan">
-                <option value="MOleksandra Masiukevych">
+                <option value="Oleksandra Masiukevych">
                 <option value="Pablo Machado">
                 <option value="Rana Adel Abdelaleim">
                 <option value="Tetiana Bila">
@@ -60,62 +60,93 @@
       </p>
     </fieldset>
     </div>
-    <fieldset>
-      <legend>Food Preferences:</legend>
-      <p>
-        <input type="checkbox" id="taste_1" name="x" value="x" />
-        <label for="taste_1">Drinks</label>
-      </p>
-      <p>
-        <input type="checkbox" id="taste_2" name="y" value="y" />
-        <label for="taste_2">Desserts</label>
-      </p>
-    </fieldset>
     
-    <fieldset>
-        <legend>Optional</legend>
-        
-        
-        <label for="spicy">Choose a maximum spicy: </label>
-        <input
-        type="range"
-        name="spicy"
-        id="spciy"
-        min="0"
-        max="20"
-        step="10"
-        value="10" />
-        <output class="spicy-output" for="spicy"></output>
-        <br>
-        <label for="spicy">Choose a maximum salt: </label>
-        <input
-        type="range"
-        name="salt"
-        id="salty"
-        min="0"
-        max="20"
-        step="10"
-        value="10" />
-        <output class="salt-output" for="salt"></output>
-        
-    </fieldset>
+    <div>
+      <fieldset>
+        <legend>Food Preferences:</legend>
+
+        <!-- <input type="checkbox" id="taste_1" name="x" value="x" /> -->
+        <div>
+            <legend> Entrance:</legend>
+            <label for="bread-butter">Bread and butter</label>
+            <input type="radio" id="bread" name="entrance" required>
+            <label for="olives">Olives</label>
+            <input type="radio" id="olives" name="entrance" required>
+            <label for="cheese">Cheese with spices</label>
+            <input type="radio" id="cheese" name="entrance" required>
+            <label for="salad">Salad<label>
+            <input type="radio" id="salad" name="entrance" required>
+            </div>
+        <div>
+            <legend> Main Dish:</legend>
+            <label for="fish-fries">Fish and Fries</label>  
+            <input type="radio" id="fish-fries" name="Main-dish" required>
+            <label for="pasta-sauce">Pasta and Bolognesa Sauce</label>  
+            <input type="radio" id="pasta-sauce" name="Main-dish" required>
+            <label for="vegetables-meat">Grilled vegetables and meat steack</label>  
+            <input type="radio" id="vegetables-meat" name="Main-dish" required>
+            <label for="veggie-lasagna">Eggplant lasagna</label>  
+            <input type="radio" id="veggie-lasagna" name="Main-dish" required>
+       </div>
+       <div>
+            <legend>Dessert:</legend>
+            <label for="fruit-salad">Fruit salad</label>  
+            <input type="radio" id="fruit-salad" name="dessert" required>
+            <label for="chocolate-cake">Chocolate Cake</label>  
+            <input type="radio" id="chocolate-cake" name="dessert" required>
+            <label for="ice-cream">Ice cream</label>  
+            <input type="radio" id="ice-cream" name="dessert" required>
+            <label for="cheesecake">Cheesecake</label>  
+            <input type="radio" id="cheesecake" name="dessert" required>
+       </div> 
+      </fieldset>
+    </div>
+</div>
+
+<fieldset>
+    <legend>Optional</legend>
     
-    <fieldset>
-        <legend>Dietary Restrictions</legend>
-        
-            <p>
-                <input type="checkbox" id="allergy" name="food-allergy" value="allergy"/>
-                <label for="alergy">Allergy</label>
-                
-                <input type="checkbox" id="vegetarian" name="vegetarian" value="vegetarian"/>
-                <label for="vegetarian">Vegetarian</label>
-                <input type="checkbox" id="vegan" name="vegan" value="vegan"/>
-                <label for="vegan">Vegan</label>
-            </p>
-            
-            
-        </p>
     
+    <label for="spicy">Choose a maximum spicy: </label>
+    <input
+    type="range"
+    name="spicy"
+    id="spciy"
+    min="0"
+    max="20"
+    step="10"
+    value="10" />
+    <output class="spicy-output" for="spicy"></output>
+    <br>
+    <label for="spicy">Choose a maximum salt: </label>
+    <input
+    type="range"
+    name="salt"
+    id="salty"
+    min="0"
+    max="20"
+    step="10"
+    value="10" />
+    <output class="salt-output" for="salt"></output>
+    
+</fieldset>
+
+<fieldset>
+    <legend>Dietary Restrictions</legend>
+    
+    <p>
+        <input type="checkbox" id="allergy" name="food-allergy" value="allergy"/>
+        <label for="alergy">Allergy</label>
+        
+        <input type="checkbox" id="vegetarian" name="vegetarian" value="vegetarian"/>
+        <label for="vegetarian">Vegetarian</label>
+        <input type="checkbox" id="vegan" name="vegan" value="vegan"/>
+        <label for="vegan">Vegan</label>
+    </p>
+    
+    
+</p>
+
 </fieldset>
 <fieldset>
     <legend>Portion</legend>
@@ -138,6 +169,7 @@
     teal, blue, blurple, magenta, pink!
 -->
 <!-- <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
+
 </form>
 <footer>
     <H2>By: Cris Rocha</H2>
