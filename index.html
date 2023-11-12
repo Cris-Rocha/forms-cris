@@ -7,13 +7,14 @@
     <title>Food Party</title>
 </head>
 <body>
-    <h1>Food Party</h1>
-    <form>
-    <div class="container">
     <fieldset>
-        <legend>Personnal Information</legend>
-        <label for="name">Name:</label>       
-         <input type="text" id="name" name="name" list="listname">
+      <h1>Food Party</h1>
+        <form>
+        <div class="container">
+        <fieldset>
+            <legend>Personnal Information</legend>
+            <label for="name">Name:</label>       
+            <input type="text" id="name" name="name" list="listname">
                 <datalist id="listname">
                 <option value="Cristiane Rocha">
                 <option value="Ali Murtaza">
@@ -57,122 +58,154 @@
                 <option value="Egypt">
             </datalist>
             </div>
-      </p>
-    </fieldset>
-    </div>
+            </p>
+        </fieldset>
+        </div>
     
-    <div>
+        <div>
       <fieldset>
-        <legend>Food Preferences:</legend>
+        <legend>Menu:</legend>
 
         <!-- <input type="checkbox" id="taste_1" name="x" value="x" /> -->
         <div>
             <legend> Entrance:</legend>
-            <label for="bread-butter">Bread and butter</label>
             <input type="radio" id="bread" name="entrance" required>
-            <label for="olives">Olives</label>
+            <label for="bread-butter">Bread and butter</label>
             <input type="radio" id="olives" name="entrance" required>
-            <label for="cheese">Cheese with spices</label>
+            <label for="olives">Olives</label>
             <input type="radio" id="cheese" name="entrance" required>
-            <label for="salad">Salad<label>
+            <label for="cheese">Cheese with spices</label>
             <input type="radio" id="salad" name="entrance" required>
+            <label for="salad">Salad<label>
             </div>
         <div>
             <legend> Main Dish:</legend>
-            <label for="fish-fries">Fish and Fries</label>  
             <input type="radio" id="fish-fries" name="Main-dish" required>
-            <label for="pasta-sauce">Pasta and Bolognesa Sauce</label>  
+            <label for="fish-fries">Fish and Fries</label>  
             <input type="radio" id="pasta-sauce" name="Main-dish" required>
-            <label for="vegetables-meat">Grilled vegetables and meat steack</label>  
+            <label for="pasta-sauce">Pasta and Bolognesa Sauce</label>  
             <input type="radio" id="vegetables-meat" name="Main-dish" required>
-            <label for="veggie-lasagna">Eggplant lasagna</label>  
+            <label for="vegetables-meat">Grilled vegetables and meat steack</label>  
             <input type="radio" id="veggie-lasagna" name="Main-dish" required>
+            <label for="veggie-lasagna">Eggplant lasagna</label>  
        </div>
        <div>
             <legend>Dessert:</legend>
-            <label for="fruit-salad">Fruit salad</label>  
             <input type="radio" id="fruit-salad" name="dessert" required>
-            <label for="chocolate-cake">Chocolate Cake</label>  
+            <label for="fruit-salad">Fruit salad</label>  
             <input type="radio" id="chocolate-cake" name="dessert" required>
-            <label for="ice-cream">Ice cream</label>  
+            <label for="chocolate-cake">Chocolate Cake</label>  
             <input type="radio" id="ice-cream" name="dessert" required>
-            <label for="cheesecake">Cheesecake</label>  
+            <label for="ice-cream">Ice cream</label>  
             <input type="radio" id="cheesecake" name="dessert" required>
+            <label for="cheesecake">Cheesecake</label>  
        </div> 
        <div>
             <legend>Drinks</legend>
-            <label for="Sparkling">Sparkling water</label>  
             <input type="radio" id="Sparkling" name="drinks" required>
-            <label for="juice">Natural Juice</label>  
+            <label for="Sparkling">Sparkling water</label>  
             <input type="radio" id="juice" name="drinks" required>
-            <label for="soda">Soda</label>  
+            <label for="juice">Natural Juice</label>  
             <input type="radio" id="soda" name="drinks" required>
-            <label for="beer">Beer</label>  
+            <label for="soda">Soda</label>  
             <input type="radio" id="beer" name="drinks" required>
+            <label for="beer">Beer</label>  
        </div>
-
-
       </fieldset>
-    </div>
-</div>
+        </div>
+        </div>
 
-<fieldset>
-    <legend>Optional</legend>
-    
-    
-    <label for="spicy">Choose a maximum spicy: </label>
-    <input
-    type="range"
-    name="spicy"
-    id="spciy"
-    min="0"
-    max="20"
-    step="10"
-    value="10" />
-    <output class="spicy-output" for="spicy"></output>
-    <br>
-    <label for="spicy">Choose a maximum salt: </label>
-    <input
-    type="range"
-    name="salt"
-    id="salty"
-    min="0"
-    max="20"
-    step="10"
-    value="10" />
-    <output class="salt-output" for="salt"></output>
-    
-</fieldset>
+        <fieldset>
+            <legend>Optional</legend>
+            <label for="spicy">Choose a maximum spicy: </label>
+            <input
+            type="range"
+            name="spicy"
+            id="spciy"
+            min="0"
+            max="20"
+            step="10"
+            value="10" />
+            <output class="spicy-output" for="spicy"></output>
+            <br>
+            <label for="spicy">Choose a maximum salt: </label>
+            <input
+            type="range"
+            name="salt"
+            id="salty"
+            min="0"
+            max="20"
+            step="10"
+            value="10" />
+            <output class="salt-output" for="salt"></output>
+            
+        </fieldset>
+        <div>
+        <fieldset>
+                <legend>Dietary Restrictions</legend>
+                
+                <div>
+                    <p>Food preferences</p>
+                    <input type="radio" id="vegetarian" name="vegetarian" value="vegetarian"/>
+                    <label for="vegetarian">Vegetarian</label>
+                    <input type="radio" id="vegan" name="vegan" value="vegan"/>
+                    <label for="vegan">Vegan</label>
+                    <input type="radio" id="low-sugar" name="low-sugar" value="low-sugar"/>
+                    <label for="low-sugar">Low sugar</label>
+                </div>
+                <div>
+            <label for="alergies">Alergies:</label> <br>
+                <input type="text" id="alergies" name="alergies" list="alergylist">
+                    <datalist id="alergylist">
+                    <option value="Fish">
+                    <option value="Peanut">
+                    <option value="Tree Nut">
+                    <option value="Egg">
+                    <option value="Dairy">
+                    <option value="Wheat">
+                    <option value="Soy">
+                    <option value="Sesame">
+                    <option value="Others">
+                </datalist>
+                </div>
+                <div>
+                <label for="Intolerances">Intolerances:</label> <br>
+                <input type="text" id="Intolerances" name="Intolerances" list="intolerancelist">
+                    <datalist id="intolerancelist">
+                <option value="Lactose">
+                <option value="Gluten">
+                <option value="Sorbidol">
+                    <option value="Fructose">
+                    <option value="Salicyltes">
+                </datalist>
+                </div>  
 
-<fieldset>
-    <legend>Dietary Restrictions</legend>
     
-    <p>
-        <input type="checkbox" id="allergy" name="food-allergy" value="allergy"/>
-        <label for="alergy">Allergy</label>
+        </fieldset>
+            </div>
+        <fieldset>
+            <legend>Portion</legend>
+            <p>
+            <input type="radio" name="name" id="size_1" value="small" />
+            <label for="size_1">Small - Medium</label>
+            </p>
+            <p>
+            <input type="radio" name="size" id="size_2" value="medium" />
+            <label for="size_2">Medium -Large</label>
+            </p>
         
-        <input type="checkbox" id="vegetarian" name="vegetarian" value="vegetarian"/>
-        <label for="vegetarian">Vegetarian</label>
-        <input type="checkbox" id="vegan" name="vegan" value="vegan"/>
-        <label for="vegan">Vegan</label>
-    </p>
-    
-    
-</p>
+            </fieldset>
 
-</fieldset>
-<fieldset>
-    <legend>Portion</legend>
-    <p>
-        <input type="radio" name="name" id="size_1" value="small" />
-        <label for="size_1">Small - Medium</label>
-    </p>
-    <p>
-        <input type="radio" name="size" id="size_2" value="medium" />
-        <label for="size_2">Medium -Large</label>
-    </p>
-    
-</fieldset>
+            </div>
+            <div class="button">
+            <button type="submit">Submit this form</button>
+
+            <button type="reset">Reset this form!</button>
+            </div>  
+        </fieldset>
+    </fieldset>
+    </fieldset>
+
 <!-- <script src="script.js"></script> -->
 
 <!--
